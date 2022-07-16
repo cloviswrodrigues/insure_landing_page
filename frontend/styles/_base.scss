@@ -3,3 +3,33 @@ $color-grayish-blue: hsl(216, 30%, 68%);
 $color-very-dark-violet: hsl(270, 9%, 17%);
 $color-dark-grayish-violet: hsl(273, 4%, 51%);
 $color-very-light-gray: hsl(0, 0%, 98%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: Karla, sans-serif;
+}
+
+body {
+    background-color: red;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+   all: unset;
+   cursor: pointer;
+}
+
+li {
+    list-style: none;
+}

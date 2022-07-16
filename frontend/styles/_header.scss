@@ -1,0 +1,21 @@
+.header {
+    background-color: $color-very-light-gray;
+    padding: 4rem 0;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 3rem;
+        text-transform: uppercase;
+        color: $color-dark-grayish-violet;
+        font-weight: 700;
+    }
+}
