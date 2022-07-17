@@ -63,11 +63,16 @@ li {
   text-transform: uppercase;
   font-size: 1.4rem;
   font-weight: 700;
+  color: #fafafa;
   letter-spacing: .1rem;
 }
 
 .btn-emphasis {
   border: 2px solid #2d2640;
   color: #2d2640;
+}
+
+.section-first {
+  background-color: #2d2640;
 }
 /*# sourceMappingURL=main.css.map */
