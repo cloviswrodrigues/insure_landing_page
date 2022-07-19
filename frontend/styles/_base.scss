@@ -17,7 +17,27 @@ html {
 }
 
 body {
-    background-color: red;
+    background: $color-very-light-gray;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url(../assets/bg-pattern-intro-right-desktop.svg) no-repeat right top;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url(../assets/bg-pattern-intro-left-desktop.svg) no-repeat left bottom;
+    }
 }
 
 .container {
