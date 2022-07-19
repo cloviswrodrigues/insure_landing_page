@@ -75,4 +75,35 @@ li {
 .section-first {
   background-color: #2d2640;
 }
+
+.section-first .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  padding: 10rem 0;
+  height: 595px;
+}
+
+.section-first__divider {
+  width: 25%;
+  background-color: #fafafa;
+}
+
+.section-first__title {
+  margin-top: 4rem;
+  width: 90%;
+  font-size: 7rem;
+  font-family: DM Serif Display, sans-serif;
+  font-weight: 400;
+  color: #fafafa;
+  line-height: 6rem;
+}
+
+.section-first__paragraph {
+  margin: 4rem 0;
+  font-size: 1.6rem;
+  color: #fafafa;
+  line-height: 2.5rem;
+}
 /*# sourceMappingURL=main.css.map */
