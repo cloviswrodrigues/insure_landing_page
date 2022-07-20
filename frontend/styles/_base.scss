@@ -18,6 +18,7 @@ html {
 
 body {
     background: $color-very-light-gray;
+    overflow-x: hidden;
 
     &:before {
         content: '';

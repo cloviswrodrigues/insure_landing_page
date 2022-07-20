@@ -12,6 +12,7 @@ html {
 
 body {
   background: #fafafa;
+  overflow-x: hidden;
 }
 
 body:before {
@@ -127,5 +128,31 @@ li {
   font-size: 1.6rem;
   color: #fafafa;
   line-height: 2.5rem;
+}
+
+.section-second {
+  margin-top: 25rem;
+}
+
+.section-second__divider {
+  width: 12rem;
+  background-color: #837d87;
+}
+
+.section-second__title {
+  margin-top: 4rem;
+  font-size: 6rem;
+  font-family: DM Serif Display, sans-serif;
+  font-weight: 400;
+}
+
+.section-second__benefits {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=main.css.map */
