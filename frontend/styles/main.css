@@ -155,4 +155,26 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.section-second__item {
+  max-width: 34rem;
+}
+
+.section-second__item img {
+  width: 8rem;
+}
+
+.section-second__item h3 {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  font-family: DM Serif Display, sans-serif;
+  font-weight: 400;
+}
+
+.section-second__item p {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  color: #837d87;
+  line-height: 2.5rem;
+}
 /*# sourceMappingURL=main.css.map */

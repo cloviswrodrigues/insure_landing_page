@@ -66,4 +66,26 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__item {
+        max-width: 34rem;
+
+        img {
+            width: 8rem;
+        }
+
+        h3 {
+            margin-top: 2rem;
+            font-size: 2.4rem;
+            font-family: DM Serif Display, sans-serif;
+            font-weight: 400;
+        }
+
+        p {
+            margin-top: 1.5rem;
+            font-size: 1.6rem;
+            color: $color-dark-grayish-violet;
+            line-height: 2.5rem;
+        }
+    }
 }
