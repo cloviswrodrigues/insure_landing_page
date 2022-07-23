@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: #fafafa;
+  background: white;
   overflow-x: hidden;
 }
 
@@ -200,5 +200,55 @@ li {
   font-weight: 400;
   color: #fafafa;
   line-height: 6rem;
+}
+
+.footer {
+  margin-top: 10rem;
+  padding: 6rem 0;
+  background: url(../assets/bg-pattern-footer-desktop.svg) no-repeat left top #fafafa;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 3.3rem;
+  border-bottom: 1px solid #95a9c6;
+}
+
+.footer .social-media a:nth-of-type(1n+1) {
+  margin-left: 1rem;
+}
+
+.footer__links {
+  max-width: 80%;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__link-group h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #837d87;
+}
+
+.footer__link-group nav {
+  margin-top: 3.5rem;
+}
+
+.footer__link-group li {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #2b272f;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

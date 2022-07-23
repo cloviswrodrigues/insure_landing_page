@@ -1,0 +1,45 @@
+.footer {
+    margin-top: 10rem;
+    padding: 6rem 0;
+    background: url(../assets/bg-pattern-footer-desktop.svg) no-repeat left top $color-very-light-gray;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3.3rem;
+        border-bottom: 1px solid $color-grayish-blue;        
+    }
+
+    .social-media {
+        a:nth-of-type(1n+1) {
+            margin-left: 1rem;
+        }
+    }
+
+    &__links {
+        max-width: 80%;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link-group {
+        h4 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: $color-dark-grayish-violet;
+        }
+
+        nav {
+            margin-top: 3.5rem;
+        }
+
+        li {
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: $color-very-dark-violet;
+            font-weight: 700;
+        }
+    }
+}

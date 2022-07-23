@@ -3,6 +3,7 @@ $color-grayish-blue: hsl(216, 30%, 68%);
 $color-very-dark-violet: hsl(270, 9%, 17%);
 $color-dark-grayish-violet: hsl(273, 4%, 51%);
 $color-very-light-gray: hsl(0, 0%, 98%);
+$color-white: white;
 
 
 * {
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-    background: $color-very-light-gray;
+    background: $color-white;
     overflow-x: hidden;
 
     &:before {
