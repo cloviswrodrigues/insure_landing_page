@@ -3,8 +3,7 @@
     padding: 3rem 0;
     font-size: 1.4rem;
     letter-spacing: .1rem;
-    position: sticky;
-    
+    position: sticky;    
 
     .container {
         display: flex;
@@ -17,6 +16,10 @@
         gap: 3rem;
         text-transform: uppercase;
         color: $color-dark-grayish-violet;
-        font-weight: 700;
+        font-weight: 700;   
+        
+        a:hover {
+            color: $color-dark-violet;
+        }
     }
 }

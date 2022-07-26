@@ -16,23 +16,18 @@ body {
 }
 
 body:before {
-  content: '';
-  display: block;
+  content: url(../assets/bg-pattern-intro-right-desktop.svg);
   position: absolute;
   top: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url(../assets/bg-pattern-intro-right-desktop.svg) no-repeat right top;
+  right: 0;
 }
 
 body:after {
-  content: '';
-  display: block;
+  content: url(../assets/bg-pattern-intro-left-desktop.svg);
   position: absolute;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url(../assets/bg-pattern-intro-left-desktop.svg) no-repeat left bottom;
+  left: 0;
+  z-index: 0;
 }
 
 .container {
@@ -80,6 +75,10 @@ li {
   font-weight: 700;
 }
 
+.header__menu a:hover {
+  color: #2d2640;
+}
+
 .btn {
   border: 2px solid #fafafa;
   padding: 1rem 2.2rem;
@@ -88,11 +87,22 @@ li {
   font-weight: 700;
   color: #fafafa;
   letter-spacing: .1rem;
+  z-index: 99;
+}
+
+.btn:hover {
+  background-color: #fafafa;
+  color: #2d2640 !important;
 }
 
 .btn-emphasis {
   border: 2px solid #2d2640;
   color: #2d2640;
+}
+
+.btn-emphasis:hover {
+  background-color: #2d2640;
+  color: #fafafa !important;
 }
 
 .section-first {
@@ -106,6 +116,8 @@ li {
   gap: 5rem;
   padding: 10rem 0;
   height: 595px;
+  position: relative;
+  z-index: 2;
 }
 
 .section-first__divider {
@@ -223,6 +235,10 @@ li {
   margin-left: 1rem;
 }
 
+.footer .social-media a:hover svg path {
+  fill: #2d2640;
+}
+
 .footer__links {
   max-width: 80%;
   margin-top: 5rem;
@@ -250,5 +266,9 @@ li {
   text-transform: uppercase;
   color: #2b272f;
   font-weight: 700;
+}
+
+.footer__link-group li:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

@@ -22,23 +22,18 @@ body {
     overflow-x: hidden;
 
     &:before {
-        content: '';
-        display: block;
+        content: url(../assets/bg-pattern-intro-right-desktop.svg);
         position: absolute;
         top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url(../assets/bg-pattern-intro-right-desktop.svg) no-repeat right top;
+        right: 0;
     }
 
     &:after {
-        content: '';
-        display: block;
+        content: url(../assets/bg-pattern-intro-left-desktop.svg);
         position: absolute;
         bottom: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url(../assets/bg-pattern-intro-left-desktop.svg) no-repeat left bottom;
+        left: 0;
+        z-index: 0;
     }
 }
 

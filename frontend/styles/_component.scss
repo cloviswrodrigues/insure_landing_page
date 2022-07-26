@@ -5,12 +5,23 @@
     font-size: 1.4rem;
     font-weight: 700;
     color: $color-very-light-gray;
-    letter-spacing: .1rem;
+    letter-spacing: .1rem;    
+    z-index: 99;
+
+    &:hover {
+        background-color: $color-very-light-gray;
+        color: $color-dark-violet !important;
+    }
 }
 
 .btn-emphasis {
     border: 2px solid $color-dark-violet;
     color: $color-dark-violet;
+
+    &:hover {
+        background-color: $color-dark-violet;
+        color: $color-very-light-gray !important;
+    }
 }
 
 .section-first {
@@ -20,7 +31,9 @@
         display: flex;
         gap: 5rem;
         padding: 10rem 0;
-        height: 595px;
+        height: 595px;    
+        position: relative;    
+        z-index: 2;
     }
 
     &__divider {
