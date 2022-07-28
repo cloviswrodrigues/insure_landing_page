@@ -25,7 +25,8 @@ body {
         content: url(../assets/bg-pattern-intro-right-desktop.svg);
         position: absolute;
         top: 0;
-        right: 0;
+        right: 0;        
+        z-index: 3;
     }
 
     &:after {

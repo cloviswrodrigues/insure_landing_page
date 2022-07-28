@@ -20,6 +20,7 @@ body:before {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 3;
 }
 
 body:after {
@@ -51,6 +52,7 @@ li {
   letter-spacing: .1rem;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 3;
 }
 
 .header .container {
@@ -228,7 +230,7 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 3.3rem;
-  border-bottom: 1px solid #95a9c6;
+  border-bottom: 1px solid #837d87;
 }
 
 .footer .social-media a:nth-of-type(1n+1) {
