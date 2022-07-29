@@ -53,6 +53,7 @@ li {
   position: -webkit-sticky;
   position: sticky;
   z-index: 3;
+  width: 100%;
 }
 
 .header .container {
@@ -142,6 +143,27 @@ li {
   font-size: 1.6rem;
   color: #fafafa;
   line-height: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section-first .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+    height: auto;
+  }
+  .section-first__divider {
+    display: none;
+  }
+  .section-first__title {
+    font-size: 7rem;
+  }
+  .section-first__paragraph {
+    font-size: 1.6rem;
+  }
 }
 
 .section-second {

@@ -57,6 +57,27 @@
         color: $color-very-light-gray;
         line-height: 2.5rem;
     }
+
+    @media screen and (max-width: $break-mobile) {
+        .container {
+            flex-direction: column-reverse;            
+            gap: 0;
+            padding: 0;
+            height: auto;   
+        }
+
+        &__divider {
+            display: none;
+        }
+
+        &__title {
+            font-size: 7rem;
+        }
+
+        &__paragraph {
+            font-size: 1.6rem;
+        }   
+    }
 }
 
 .section-second {
