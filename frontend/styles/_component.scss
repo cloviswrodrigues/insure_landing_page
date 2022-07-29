@@ -60,10 +60,19 @@
 
     @media screen and (max-width: $break-mobile) {
         .container {
-            flex-direction: column-reverse;            
+            width: 100%;
+            flex-direction: column-reverse;       
+            align-items: center;
             gap: 0;
             padding: 0;
             height: auto;   
+
+            div:first-child {
+                padding: 0% 2.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
         }
 
         &__divider {
@@ -71,12 +80,32 @@
         }
 
         &__title {
-            font-size: 7rem;
+            margin-top: 8rem;
+            width: 100%;
+            font-size: 4.2rem;
+            text-align: center;
+            line-height: 4rem;
         }
 
         &__paragraph {
+            margin: 2rem 0 3rem;
             font-size: 1.6rem;
+            text-align: center;
         }   
+
+        &__img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .btn {
+            display: flex;
+            align-self: center;
+            margin-bottom: 8rem;
+        }
     }
 }
 
