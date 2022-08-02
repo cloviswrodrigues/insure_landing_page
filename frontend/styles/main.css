@@ -15,22 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-body:before {
-  content: url(../assets/bg-pattern-intro-right-desktop.svg);
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
-}
-
-body:after {
-  content: url(../assets/bg-pattern-intro-left-desktop.svg);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -52,7 +36,7 @@ li {
   letter-spacing: .1rem;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
 }
 
@@ -80,6 +64,19 @@ li {
 
 .header__menu a:hover {
   color: #2d2640;
+}
+
+.header__menu-hamburguer {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header__menu {
+    display: none;
+  }
+  .header__menu-hamburguer {
+    display: block;
+  }
 }
 
 .btn {
@@ -112,6 +109,20 @@ li {
   background: #2d2640;
 }
 
+.section-first__info:before {
+  content: url(../assets/bg-pattern-intro-right-desktop.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.section-first__info:after {
+  content: url(../assets/bg-pattern-intro-left-desktop.svg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .section-first .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,7 +130,6 @@ li {
   gap: 5rem;
   padding: 10rem 0;
   height: 595px;
-  position: relative;
   z-index: 2;
 }
 
@@ -146,6 +156,23 @@ li {
 }
 
 @media screen and (max-width: 600px) {
+  .section-first__info {
+    position: relative;
+  }
+  .section-first__info:before {
+    content: url(../assets/bg-pattern-intro-right-mobile.svg);
+    position: absolute;
+    top: auto;
+    bottom: -180px;
+    right: 0;
+  }
+  .section-first__info:after {
+    content: url(../assets/bg-pattern-intro-left-mobile.svg);
+    position: absolute;
+    top: -3px;
+    bottom: auto;
+    left: 0;
+  }
   .section-first .container {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -181,6 +208,7 @@ li {
     font-size: 4.2rem;
     text-align: center;
     line-height: 4rem;
+    z-index: 5;
   }
   .section-first__paragraph {
     margin: 2rem 0 3rem;

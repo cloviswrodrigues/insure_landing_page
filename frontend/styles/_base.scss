@@ -22,22 +22,6 @@ html {
 body {
     background: $color-white;
     overflow-x: hidden;
-
-    &:before {
-        content: url(../assets/bg-pattern-intro-right-desktop.svg);
-        position: absolute;
-        top: 0;
-        right: 0;        
-        z-index: 3;
-    }
-
-    &:after {
-        content: url(../assets/bg-pattern-intro-left-desktop.svg);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 0;
-    }
 }
 
 .container {

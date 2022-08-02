@@ -4,7 +4,7 @@
     font-size: 1.4rem;
     letter-spacing: .1rem;
     position: sticky;    
-    z-index: 3;
+    z-index: 4;
     width: 100%;
 
     .container {
@@ -23,5 +23,21 @@
         a:hover {
             color: $color-dark-violet;
         }
+    }
+
+    &__menu-hamburguer {
+        display: none;
+    }
+
+    @media screen and (max-width: $break-mobile) {
+
+        &__menu {
+            display: none;
+        }
+
+        &__menu-hamburguer {
+            display: block;
+        }
+
     }
 }
