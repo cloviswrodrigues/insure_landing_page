@@ -279,6 +279,29 @@ li {
   line-height: 2.5rem;
 }
 
+@media screen and (max-width: 600px) {
+  .section-second {
+    margin-top: 15rem;
+  }
+  .section-second__divider {
+    margin: 0 auto;
+  }
+  .section-second__title {
+    margin-top: 3rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .section-second__benefits {
+    margin-top: 6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 5rem;
+  }
+}
+
 .section-third {
   display: -webkit-box;
   display: -ms-flexbox;

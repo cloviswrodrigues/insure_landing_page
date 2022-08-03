@@ -189,6 +189,27 @@
             line-height: 2.5rem;
         }
     }
+
+    @media screen and (max-width: $break-mobile) {
+        margin-top: 15rem;
+
+        &__divider {
+            margin: 0 auto;
+        }
+
+        &__title {
+            margin-top: 3rem;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        &__benefits {
+            margin-top: 6rem;
+            flex-direction: column;
+            text-align: center;
+            gap: 5rem;
+        }
+    }
 }
 
 .section-third {
