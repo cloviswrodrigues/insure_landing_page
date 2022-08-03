@@ -20,6 +20,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -309,6 +315,8 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -324,6 +332,24 @@ li {
   font-weight: 400;
   color: #fafafa;
   line-height: 6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section-third {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 8rem 3rem;
+    text-align: center;
+    background: url(../assets/bg-pattern-how-we-work-mobile.svg) no-repeat right top #2d2640;
+  }
+  .section-third h2 {
+    width: 100%;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 3.5rem;
+  }
 }
 
 .footer {

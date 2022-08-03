@@ -215,6 +215,7 @@
 .section-third {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 12rem;
     background: url(../assets/bg-pattern-how-we-work-desktop.svg) no-repeat right center $color-dark-violet;
@@ -227,5 +228,19 @@
         font-weight: 400;
         color: $color-very-light-gray;
         line-height: 6rem;
+    }
+
+    @media screen and (max-width: $break-mobile) {  
+        flex-direction: column;      
+        padding: 8rem 3rem;
+        text-align: center;
+        background: url(../assets/bg-pattern-how-we-work-mobile.svg) no-repeat right top $color-dark-violet;
+
+        h2 {
+            width: 100%;
+            font-size: 4rem;
+            line-height: 4rem;
+            margin-bottom: 3.5rem;
+        }
     }
 }
