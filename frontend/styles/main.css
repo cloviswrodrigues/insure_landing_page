@@ -353,6 +353,7 @@ li {
 }
 
 .footer {
+  position: relative;
   margin-top: 10rem;
   padding: 6rem 0;
   background: url(../assets/bg-pattern-footer-desktop.svg) no-repeat left top #fafafa;
@@ -370,7 +371,7 @@ li {
 }
 
 .footer .social-media a:nth-of-type(1n+1) {
-  margin-left: 1rem;
+  margin-left: 1.2rem;
 }
 
 .footer .social-media a:hover svg path {
@@ -408,5 +409,35 @@ li {
 
 .footer__link-group li:hover {
   text-decoration: underline;
+}
+
+.footer .attribution {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 8.8rem 0;
+    text-align: center;
+    background: url(../assets/bg-pattern-footer-mobile.svg) no-repeat left top #fafafa;
+  }
+  .footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+  }
+  .footer__links {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
