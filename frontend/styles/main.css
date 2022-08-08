@@ -78,7 +78,27 @@ li {
 
 @media screen and (max-width: 600px) {
   .header__menu {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 123px);
+    background: url(../assets/bg-pattern-mobile-nav.svg) no-repeat bottom left #2b272f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+  }
+  .header__menu li {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+  }
+  .header__menu .btn-emphasis {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8rem;
+    color: white;
+    border: 2px solid white;
   }
   .header__menu-hamburguer {
     display: block;

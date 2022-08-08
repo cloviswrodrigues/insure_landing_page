@@ -32,7 +32,29 @@
     @media screen and (max-width: $break-mobile) {
 
         &__menu {
-            display: none;
+            display: block;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 123px);
+            background: url(../assets/bg-pattern-mobile-nav.svg) no-repeat bottom left $color-very-dark-violet;
+            color: $color-white;
+            text-align: center;
+            padding: 18px;
+
+            li {
+                font-size: 1.8rem;
+                margin-top: 4rem;
+            }
+
+            .btn-emphasis {                
+                display: inline-block;
+                width: 100%;
+                font-size: 1.8rem;
+                color: $color-white;                
+                border: 2px solid $color-white;
+            }
         }
 
         &__menu-hamburguer {
