@@ -25,36 +25,58 @@
         }
     }
 
+    &__menu-toggle {
+        display: none;
+    }
+
     &__menu-hamburguer {
         display: none;
     }
 
     @media screen and (max-width: $break-mobile) {
+        &__menu-toggle {
+            display: flex;
+        }
 
         &__menu {
-            display: block;
+            display: none;
             position: absolute;
             top: 93px;
             left: 0;
             width: 100%;
             height: calc(100vh - 90px);
             background: url(../assets/bg-pattern-mobile-nav.svg) no-repeat bottom left $color-very-dark-violet;
+            background-size: contain;
             color: $color-white;
             text-align: center;
             padding: 18px;
 
             li {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 margin-top: 4rem;
+
+                & a:hover {
+                    color: $color-white;
+                }
             }
 
             .btn-emphasis {                
                 display: inline-block;
                 width: 100%;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 color: $color-white;                
                 border: 2px solid $color-white;
+                padding: 1.5rem 2rem;
+
+                &:hover {
+                    background-color: initial;
+                    color: initial;
+                }
             }
+        }
+
+        .active {
+            display: block;
         }
 
         &__menu-hamburguer {

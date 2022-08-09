@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 90%;
   }
@@ -29,10 +29,20 @@ body {
 a {
   all: unset;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 li {
   list-style: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.disabled {
+  display: none !important;
 }
 
 .header {
@@ -72,33 +82,54 @@ li {
   color: #2d2640;
 }
 
+.header__menu-toggle {
+  display: none;
+}
+
 .header__menu-hamburguer {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  .header__menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header__menu {
-    display: block;
+    display: none;
     position: absolute;
     top: 93px;
     left: 0;
     width: 100%;
     height: calc(100vh - 90px);
     background: url(../assets/bg-pattern-mobile-nav.svg) no-repeat bottom left #2b272f;
+    background-size: contain;
     color: white;
     text-align: center;
     padding: 18px;
   }
   .header__menu li {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-top: 4rem;
+  }
+  .header__menu li a:hover {
+    color: white;
   }
   .header__menu .btn-emphasis {
     display: inline-block;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: white;
     border: 2px solid white;
+    padding: 1.5rem 2rem;
+  }
+  .header__menu .btn-emphasis:hover {
+    background-color: initial;
+    color: initial;
+  }
+  .header .active {
+    display: block;
   }
   .header__menu-hamburguer {
     display: block;
@@ -181,7 +212,7 @@ li {
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .section-first__info {
     position: relative;
   }
@@ -305,7 +336,7 @@ li {
   line-height: 2.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .section-second {
     margin-top: 15rem;
   }
@@ -354,7 +385,7 @@ li {
   line-height: 6rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .section-third {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -432,15 +463,12 @@ li {
 }
 
 .footer .attribution {
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  margin: 0 auto;
+  margin-top: 8rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .footer {
-    padding: 8.8rem 0;
+    padding: 8.8rem 0 .5rem;
     text-align: center;
     background: url(../assets/bg-pattern-footer-mobile.svg) no-repeat left top #fafafa;
   }
