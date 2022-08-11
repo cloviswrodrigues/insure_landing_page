@@ -27,7 +27,8 @@
 .section-first {
     background: $color-dark-violet;
 
-    &__info {      
+    &__info {    
+        width: 48%;  
 
         &:before {
             content: url(../assets/bg-pattern-intro-right-desktop.svg);
@@ -44,8 +45,15 @@
         }
     }
 
+    &__img {
+        width: 46%;
+    }
+
+
     .container {
         display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
         gap: 5rem;
         padding: 10rem 0;
         height: 595px;   

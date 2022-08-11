@@ -5,7 +5,6 @@ const menu = document.querySelector('.header__menu');
 const body = document.querySelector('body');
 
 function ToggleMenuMobile(e) {
-    console.log('@@@@@@@@@@@@@@entreeei')
     menuHamburger.classList.toggle('disabled');
     menuClose.classList.toggle('disabled');
     menu.classList.toggle('active');

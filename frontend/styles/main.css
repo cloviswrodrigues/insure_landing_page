@@ -166,6 +166,10 @@ li {
   background: #2d2640;
 }
 
+.section-first__info {
+  width: 48%;
+}
+
 .section-first__info:before {
   content: url(../assets/bg-pattern-intro-right-desktop.svg);
   position: absolute;
@@ -180,10 +184,20 @@ li {
   left: 0;
 }
 
+.section-first__img {
+  width: 46%;
+}
+
 .section-first .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 5rem;
   padding: 10rem 0;
   height: 595px;
