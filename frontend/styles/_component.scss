@@ -28,7 +28,7 @@
     background: $color-dark-violet;
 
     &__info {    
-        width: 48%;  
+        max-width: 50%;  
 
         &:before {
             content: url(../assets/bg-pattern-intro-right-desktop.svg);
@@ -46,15 +46,19 @@
     }
 
     &__img {
-        width: 46%;
+        max-width: 540px;
+
+        img {
+            width: 100%;
+        }
     }
 
 
     .container {
         display: flex;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
-        gap: 5rem;
+        justify-content: space-between;
+        gap: 4rem;
         padding: 10rem 0;
         height: 595px;   
         z-index: 2;
@@ -85,6 +89,8 @@
     @media screen and (max-width: $break-mobile) {
 
         &__info {      
+            max-width: inherit;
+            padding: 0 2.5rem;
             position: relative;  
 
             &:before {
@@ -106,13 +112,13 @@
 
         .container {
             width: 100%;
-            flex-direction: column-reverse;       
+            flex-direction: column;       
             align-items: center;
             gap: 0;
             padding: 0;
             height: auto;   
 
-            div:first-child {
+            div:last-child {
                 padding: 0% 2.5rem;
                 display: flex;
                 flex-direction: column;
@@ -140,8 +146,7 @@
         }   
 
         &__img {
-            width: 100%;
-
+            padding: ;
             img {
                 width: 100%;
             }
