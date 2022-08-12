@@ -25,7 +25,16 @@
 }
 
 .section-first {
-    background: $color-dark-violet;
+    background: $color-dark-violet;   
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        padding: 10rem 0;
+        height: 595px;   
+        z-index: 2;
+    }
 
     &__info {    
         max-width: 50%;  
@@ -52,18 +61,6 @@
             width: 100%;
         }
     }
-
-
-    .container {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        gap: 4rem;
-        padding: 10rem 0;
-        height: 595px;   
-        z-index: 2;
-    }
-
     &__divider {
         width: 25%;
         background-color: $color-very-light-gray;
@@ -88,10 +85,24 @@
 
     @media screen and (max-width: $break-mobile) {
 
-        &__info {      
+        .container {
+            width: 100%;
+            flex-direction: column;       
+            align-items: center;
+            gap: 0;
+            padding: 0;
+            height: auto; 
+        }
+
+        &__info {     
+            padding: 0% 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
             max-width: inherit;
             padding: 0 2.5rem;
-            position: relative;  
+            position: relative;
+            order: 2;  
 
             &:before {
                 content: url(../assets/bg-pattern-intro-right-mobile.svg);
@@ -108,21 +119,13 @@
                 bottom: auto;
                 left: 0;
             }
-        }
+        }         
 
-        .container {
-            width: 100%;
-            flex-direction: column;       
-            align-items: center;
-            gap: 0;
-            padding: 0;
-            height: auto;   
+        &__img {
+            order: 1;
 
-            div:last-child {
-                padding: 0% 2.5rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+            img {
+                width: 100%;
             }
         }
 
@@ -143,14 +146,7 @@
             margin: 2rem 0 3rem;
             font-size: 1.6rem;
             text-align: center;
-        }   
-
-        &__img {
-            padding: ;
-            img {
-                width: 100%;
-            }
-        }
+        }  
 
         .btn {
             display: flex;

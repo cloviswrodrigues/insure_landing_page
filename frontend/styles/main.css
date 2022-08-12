@@ -167,6 +167,19 @@ li {
   background: #2d2640;
 }
 
+.section-first .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 4rem;
+  padding: 10rem 0;
+  height: 595px;
+  z-index: 2;
+}
+
 .section-first__info {
   max-width: 50%;
 }
@@ -193,23 +206,6 @@ li {
   width: 100%;
 }
 
-.section-first .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 4rem;
-  padding: 10rem 0;
-  height: 595px;
-  z-index: 2;
-}
-
 .section-first__divider {
   width: 25%;
   background-color: #fafafa;
@@ -233,10 +229,37 @@ li {
 }
 
 @media screen and (max-width: 800px) {
+  .section-first .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0;
+    padding: 0;
+    height: auto;
+  }
   .section-first__info {
+    padding: 0% 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: inherit;
     padding: 0 2.5rem;
     position: relative;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .section-first__info:before {
     content: url(../assets/bg-pattern-intro-right-mobile.svg);
@@ -252,31 +275,13 @@ li {
     bottom: auto;
     left: 0;
   }
-  .section-first .container {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 0;
-    padding: 0;
-    height: auto;
+  .section-first__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
-  .section-first .container div:first-child {
-    padding: 0% 2.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .section-first__img img {
+    width: 100%;
   }
   .section-first__divider {
     display: none;
@@ -293,9 +298,6 @@ li {
     margin: 2rem 0 3rem;
     font-size: 1.6rem;
     text-align: center;
-  }
-  .section-first__img img {
-    width: 100%;
   }
   .section-first .btn {
     display: -webkit-box;
